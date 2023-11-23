@@ -22,6 +22,34 @@ class MyContainer extends StatelessWidget {
                   color: Colors.black,
                   // Shape can be BoxShape.circle for container working as a circle
                   shape: BoxShape.circle,
+                  gradient: RadialGradient(
+                    colors: [
+                      Colors.black,
+                      Colors.red,
+                      Colors.orange.withOpacity(0.2)
+                    ],
+                    stops: const [
+                      0.04,
+                      0.5,
+                      1
+                    ]
+                  ),
+                  /*
+                  gradient: const LinearGradient(colors: [
+                    Colors.black,
+                    Colors.red,
+                    Colors.orange,
+                    Colors.yellow
+                  ],
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
+                  stops: [
+                    0.05,
+                    0.4,
+                    0.6,
+                    1
+                  ]
+                  ),*/
                   /*
                   borderRadius: BorderRadius.horizontal(
                       left: Radius.circular(50),
@@ -29,9 +57,9 @@ class MyContainer extends StatelessWidget {
                   ),*/
                   boxShadow: [
                     BoxShadow(
-                      color: const Color.fromARGB(255, 13, 13, 13).withOpacity(0.2),
-                      blurRadius: 7,
-                      spreadRadius: 10
+                      color: const Color.fromARGB(255, 13, 13, 13),
+                      blurRadius: 1,
+                      spreadRadius: 5
                     ),
                     BoxShadow(
                       color: Color.fromARGB(255, 87, 59, 214).withOpacity(0.4),
