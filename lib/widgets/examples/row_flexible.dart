@@ -91,13 +91,34 @@ class MyFlexible extends StatelessWidget {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Flexible(
                   child:
                     Container(
-                      height: 50,
+                      height: 200,
+                      width: 200,
                       color: Colors.purpleAccent,
+                      child: FlutterLogo(),
+                    )
+                ),
+                Flexible(
+                  flex: 2,
+                  child:
+                    Container(
+                      height: 250,
+                      width: 250,
+                      color: Colors.purpleAccent,
+                      child: FlutterLogo(),
+                    )
+                ),
+                Flexible(
+                  child:
+                    Container(
+                      height: 300,
+                      width: 300,
+                      color: Colors.purpleAccent,
+                      child: FlutterLogo(),
                     )
                 )
               ]
