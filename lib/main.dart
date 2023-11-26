@@ -1,3 +1,4 @@
+import 'package:face_app/widgets/column.dart';
 import 'package:face_app/widgets/container.dart';
 import 'package:flutter/material.dart';
 import 'package:face_app/widgets/text.dart';
@@ -13,9 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Center(
-        child: MyContainer()
-      ),
+      home: MyColumn(),
     );
   }
 }
