@@ -30,30 +30,32 @@ class MyFlexible extends StatelessWidget {
                   )
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: 100,
-                  height: 300,
-                  color: Colors.blue,
-                ),
-                Flexible(
-                  /* control over flow */
-                  child: Text(
-                    '''The edge of the RenderFlex that is overflowing has been marked in the rendering with a yellow and 
-                    black striped pattern. This is usually caused by the contents being too big for the RenderFlex.
-                    Consider applying a flex factor (e.g. using an Expanded widget) to force the children of the 
-                    RenderFlex to fit within the available space instead of being sized to their natural size.'''
-                    )
+            Flexible(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 300,
+                    color: Colors.blue,
                   ),
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.yellow,
-                ),
-              ],
+                  Flexible(
+                    /* control over flow */
+                    child: Text(
+                      '''The edge of the RenderFlex that is overflowing has been marked in the rendering with a yellow and 
+                      black striped pattern. This is usually caused by the contents being too big for the RenderFlex.
+                      Consider applying a flex factor (e.g. using an Expanded widget) to force the children of the 
+                      RenderFlex to fit within the available space instead of being sized to their natural size.'''
+                      )
+                    ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
+                  ),
+                ],
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -96,32 +98,47 @@ class MyFlexible extends StatelessWidget {
                 Flexible(
                   child:
                     Container(
-                      height: 200,
-                      width: 200,
                       color: Colors.purpleAccent,
-                      child: FlutterLogo(),
+                      child: FlutterLogo(
+                        size: 100,
+                      ),
                     )
                 ),
                 Flexible(
                   flex: 2,
                   child:
                     Container(
-                      height: 250,
-                      width: 250,
                       color: Colors.purpleAccent,
-                      child: FlutterLogo(),
+                      child: FlutterLogo(
+                        size: 150,
+                      ),
                     )
                 ),
                 Flexible(
                   child:
                     Container(
-                      height: 300,
-                      width: 300,
                       color: Colors.purpleAccent,
-                      child: FlutterLogo(),
+                      child: FlutterLogo(
+                        size: 200
+                      ),
                     )
                 )
               ]
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                FlutterLogo(
+                  size: 100
+                ),
+                Spacer(),  // Fill all space 
+                FlutterLogo(
+                  size: 100,
+                ),
+                FlutterLogo(
+                  size: 100,
+                )
+              ],
             )
           ],
         )
