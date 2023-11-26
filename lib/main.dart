@@ -1,8 +1,5 @@
-import 'package:face_app/widgets/column.dart';
-import 'package:face_app/widgets/container.dart';
-import 'package:face_app/widgets/row.dart';
+import 'package:face_app/widgets/examples/row_flexible.dart';
 import 'package:flutter/material.dart';
-import 'package:face_app/widgets/text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyRow(),
+      home: MyFlexible()
     );
   }
 }
