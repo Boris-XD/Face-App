@@ -10,13 +10,13 @@ class MyColumn extends StatelessWidget {
       child: Container(
           color: Colors.white,
           padding: EdgeInsets.symmetric(
-            vertical: 55
+            vertical: 0
           ),
           child: Column(
             // Align items
             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
+              /*Text(
                 "BORIS",
                 style: TextStyle(
                   fontSize: 20,
@@ -30,17 +30,36 @@ class MyColumn extends StatelessWidget {
                   fontSize: 35,
                   fontWeight: FontWeight.bold
                 ),
-              ),
-              Spacer(),
+              ),*/
               Container(
-                height:100,
-                width: 100,
-                color: Colors.orange,
-              )
-              ,
-              Container(
-                height:100,
+                height:50,
                 color: Colors.red,
+              ),
+              Container(
+                height:50,
+                color: Colors.yellow,
+              ),
+              Container(
+                height:50,
+                color: Colors.green,
+              ),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  color: Colors.blue,
+                )
+              ),
+              Expanded(
+                flex: 3,
+                child: Container(
+                  color: Colors.purple,
+                )
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  color: Colors.orange,
+                )
               )
             ]
             ),
