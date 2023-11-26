@@ -54,6 +54,53 @@ class MyFlexible extends StatelessWidget {
                   color: Colors.yellow,
                 ),
               ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Flexible(
+                  flex: 2,
+                  fit: FlexFit.tight,
+                  child: 
+                    Container(
+                      width: 50,
+                      height: 50,
+                      color: Colors.yellow,
+                    ),
+                ),
+                Flexible(
+                  flex: 2,
+                  fit: FlexFit.tight,
+                  child: 
+                    Container(
+                      width: 50,
+                      height: 50,
+                      color: Colors.orange,
+                    ),
+                ),
+                Flexible(
+                  child: 
+                    Container(
+                      width: 140,
+                      height: 50,
+                      color: Colors.yellow,
+                    ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Flexible(
+                  child:
+                    Container(
+                      height: 50,
+                      color: Colors.purpleAccent,
+                    )
+                )
+              ]
             )
           ],
         )
