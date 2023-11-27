@@ -1,4 +1,5 @@
 import 'package:face_app/widgets/examples/row_flexible.dart';
+import 'package:face_app/widgets/examples/stack.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyFlexible()
+      home: MyStack()
     );
   }
 }
