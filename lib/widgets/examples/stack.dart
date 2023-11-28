@@ -11,24 +11,49 @@ class MyStack extends StatelessWidget {
         color: Colors.amber,
         child: Center(
           child: Container(
-            color: Colors.grey,
+            padding: EdgeInsets.all(10),
+            color: Colors.black,
             height: 300,
             width: 300,
             child: Stack(
-              alignment: Alignment.bottomCenter,
+              alignment: Alignment.center,
               children: [
                 Container(
                   height: 200,
                   width: 200,
                   color: Colors.pink,
                 ),
+                Positioned(
+                  top: 0,
+                  child: const Text(
+                    "Hello Boris",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white
+                    ),
+                  ),
+                ),
+                Positioned(
+                  bottom: 0,
+                  child: const Text(
+                    "Sea",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white
+                    ),
+                  ),
+                ),
                 Container(
                   height: 100,
-                  width: 100,
-                  color: Colors.brown,
+                  color: Colors.blue,
                 ),
-                const Text(
-                  "Hello Boris"
+                Positioned(
+                  right: -20,
+                  child: FlutterLogo(
+                    size: 80,
+                  )
                 )
               ],
             ),
