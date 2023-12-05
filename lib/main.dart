@@ -1,4 +1,5 @@
 import 'package:face_app/widgets/examples/row_flexible.dart';
+import 'package:face_app/widgets/examples/scafold.dart';
 import 'package:face_app/widgets/examples/stack.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyStack()
+      home: MyScafold()
     );
   }
 }
