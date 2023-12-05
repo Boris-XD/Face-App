@@ -31,6 +31,25 @@ class MyScafold extends StatelessWidget {
             ],
           )
         ),
+        endDrawer: Drawer(
+          backgroundColor: Colors.amber
+          ),
+        endDrawerEnableOpenDragGesture: false,
+        onEndDrawerChanged: (isOpened){
+          print("Right is open: $isOpened");
+        },
+        drawer: Drawer(
+          elevation: 25,
+          child: Column(
+            children: const [
+              SizedBox(height: 50),
+              Text("Boris@nest.com")
+            ],  
+          ),
+        ),
+        onDrawerChanged: (isOpened){
+          print("Left is open: $isOpened");
+        },
         body: const Center(
           child: Text('Hello World'),
         ),
