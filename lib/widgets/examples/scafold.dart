@@ -31,6 +31,15 @@ class MyScafold extends StatelessWidget {
             ],
           )
         ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        floatingActionButton: FloatingActionButton(
+          child: const Icon(
+            Icons.add
+          ),
+          onPressed: (){
+            print("Hello CND");
+          },
+        ),
         endDrawer: Drawer(
           backgroundColor: Colors.amber
           ),
