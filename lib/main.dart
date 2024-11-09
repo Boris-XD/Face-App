@@ -5,6 +5,7 @@ import 'package:face_app/widgets/examples/stack.dart';
 import 'package:face_app/widgets/notes/notes_list.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets/containers/container_three.dart';
 import 'widgets/containers/container_two.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: MyContainerTwo() //MyFlexible() //MyScafold()
+    return MaterialApp(home: MyContainerThree() //MyFlexible() //MyScafold()
         );
   }
 }
