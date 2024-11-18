@@ -1,4 +1,5 @@
 import 'package:face_app/widgets/columns/column_one.dart';
+import 'package:face_app/widgets/columns/column_two.dart';
 import 'package:face_app/widgets/containers/container_one.dart';
 import 'package:face_app/widgets/examples/row_flexible.dart';
 import 'package:face_app/widgets/examples/scafold.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: MyColumnOne() //MyFlexible() //MyScafold()
+    return MaterialApp(home: MyColumnTwo() //MyFlexible() //MyScafold()
         );
   }
 }
