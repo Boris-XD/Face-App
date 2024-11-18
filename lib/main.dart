@@ -5,6 +5,7 @@ import 'package:face_app/widgets/examples/row_flexible.dart';
 import 'package:face_app/widgets/examples/scafold.dart';
 import 'package:face_app/widgets/examples/stack.dart';
 import 'package:face_app/widgets/notes/notes_list.dart';
+import 'package:face_app/widgets/rows/row_one.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/containers/container_three.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: MyColumnTwo() //MyFlexible() //MyScafold()
+    return MaterialApp(home: MyRowOne() //MyFlexible() //MyScafold()
         );
   }
 }
