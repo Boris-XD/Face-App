@@ -37,7 +37,7 @@ class MyStackOne extends StatelessWidget {
                     height: 50,
                     color: Colors.white,
                   ),
-                  Text("Manu")
+                  const Text("Manu")
                 ],
               ),
             ),
