@@ -12,6 +12,7 @@ import 'package:flutter/material.dart';
 
 import 'widgets/containers/container_three.dart';
 import 'widgets/containers/container_two.dart';
+import 'widgets/stack/my_stack.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: MyRowThird() //MyFlexible() //MyScafold()
+    return MaterialApp(home: MyStackOne() //MyFlexible() //MyScafold()
         );
   }
 }
